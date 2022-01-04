@@ -7,5 +7,6 @@
 
 import Foundation
 
-print("Hello, World!")
-
+// Stack Call
+var stack: Stack = [1,2,3,4,5,6]
+print(stack.debugDescription)
