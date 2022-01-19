@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B704FF0B278579A200CCAF67 /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B704FF0A278579A200CCAF67 /* LinkedListNode.swift */; };
+		B704FF0D27857B4000CCAF67 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B704FF0C27857B4000CCAF67 /* LinkedList.swift */; };
 		C5C774A4277203AE000BE054 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C774A3277203AE000BE054 /* main.swift */; };
 		C5C774AD27720A29000BE054 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C774AC27720A29000BE054 /* Stack.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B704FF0A278579A200CCAF67 /* LinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
+		B704FF0C27857B4000CCAF67 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		C5C774A0277203AE000BE054 /* DataStructureAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C774A3277203AE000BE054 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C5C774AC27720A29000BE054 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -40,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B7338CB4278C07790014386F /* Linked List */ = {
+			isa = PBXGroup;
+			children = (
+				B704FF0A278579A200CCAF67 /* LinkedListNode.swift */,
+				B704FF0C27857B4000CCAF67 /* LinkedList.swift */,
+			);
+			path = "Linked List";
+			sourceTree = "<group>";
+		};
 		C5C77497277203AE000BE054 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +74,7 @@
 			children = (
 				C5C774A3277203AE000BE054 /* main.swift */,
 				C5C774AC27720A29000BE054 /* Stack.swift */,
+				B7338CB4278C07790014386F /* Linked List */,
 			);
 			path = DataStructureAlgorithms;
 			sourceTree = "<group>";
@@ -123,7 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B704FF0B278579A200CCAF67 /* LinkedListNode.swift in Sources */,
 				C5C774AD27720A29000BE054 /* Stack.swift in Sources */,
+				B704FF0D27857B4000CCAF67 /* LinkedList.swift in Sources */,
 				C5C774A4277203AE000BE054 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
