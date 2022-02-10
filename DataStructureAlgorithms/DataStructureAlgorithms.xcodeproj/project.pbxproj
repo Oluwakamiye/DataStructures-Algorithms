@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B704FF0B278579A200CCAF67 /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B704FF0A278579A200CCAF67 /* LinkedListNode.swift */; };
 		B704FF0D27857B4000CCAF67 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B704FF0C27857B4000CCAF67 /* LinkedList.swift */; };
+		C5B46EF527B4F24600A20101 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B46EF427B4F24600A20101 /* TreeNode.swift */; };
 		C5C774A4277203AE000BE054 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C774A3277203AE000BE054 /* main.swift */; };
 		C5C774AD27720A29000BE054 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C774AC27720A29000BE054 /* Stack.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		B704FF0A278579A200CCAF67 /* LinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
 		B704FF0C27857B4000CCAF67 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		C5B46EF427B4F24600A20101 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		C5C774A0277203AE000BE054 /* DataStructureAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C774A3277203AE000BE054 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C5C774AC27720A29000BE054 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 			path = "Linked List";
 			sourceTree = "<group>";
 		};
+		C5B46EF327B4F23200A20101 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				C5B46EF427B4F24600A20101 /* TreeNode.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
 		C5C77497277203AE000BE054 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +84,7 @@
 			children = (
 				C5C774A3277203AE000BE054 /* main.swift */,
 				C5C774AC27720A29000BE054 /* Stack.swift */,
+				C5B46EF327B4F23200A20101 /* Tree */,
 				B7338CB4278C07790014386F /* Linked List */,
 			);
 			path = DataStructureAlgorithms;
@@ -140,6 +151,7 @@
 				B704FF0B278579A200CCAF67 /* LinkedListNode.swift in Sources */,
 				C5C774AD27720A29000BE054 /* Stack.swift in Sources */,
 				B704FF0D27857B4000CCAF67 /* LinkedList.swift in Sources */,
+				C5B46EF527B4F24600A20101 /* TreeNode.swift in Sources */,
 				C5C774A4277203AE000BE054 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
