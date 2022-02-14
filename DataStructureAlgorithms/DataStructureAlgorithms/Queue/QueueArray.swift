@@ -8,36 +8,29 @@
 import Foundation
 
 struct QueueArray<T>: Queue {
-    typealias Element = T
     private var array = [T]()
     
     var isEmpty: Bool {
-        get {
-            return !(array.count > 0)
-        }
+        array.isEmpty
     }
     
     var peek: T? {
         array.first
     }
     
+    @discardableResult
     mutating func enqueue(_ element: T) -> Bool {
         array.append(element)
         return true
     }
     
+    // This always takes a 0(n) order
     mutating func dequeue() -> T? {
-        if array.count > 0 {
-            defer{
-                array.removeFirst()
-            }
-            return array.first
-        }
-        return nil
+        array.isEmpty ? nil : array.removeFirst()
     }
 }
 
-extension QueueArray: CustomStringConvertible {
+extension QueueArray:  CustomStringConvertible {
     var description: String {
         String(describing: array)
     }

@@ -7,23 +7,19 @@
 
 import Foundation
 
-class DoublyLinkedListNode<T> {
-    var previousNode: DoublyLinkedListNode?
-    var value: T
-    var nextNode: DoublyLinkedListNode?
+public class DoublyLinkedListNode<T> {
     
-    init(value: T, previousNode: DoublyLinkedListNode?, nextNode: DoublyLinkedListNode?) {
+    public var value: T
+    public var next: DoublyLinkedListNode<T>?
+    public var previous: DoublyLinkedListNode<T>?
+    
+    public init(value: T) {
         self.value = value
-        self.previousNode = previousNode
-        self.nextNode = nextNode
     }
 }
 
 extension DoublyLinkedListNode: CustomStringConvertible {
-    var description: String {
-        guard let nextNode = nextNode else {
-            return String(describing: value)
-        }
-        return "\(value) -> \(String(describing: nextNode))"
+    public var description: String {
+        String(describing: value)
     }
 }
