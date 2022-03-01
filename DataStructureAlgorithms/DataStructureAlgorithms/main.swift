@@ -7,13 +7,22 @@
 
 import Foundation
 
-var queue = QueueArray<String>()
+//var queue = QueueArray<String>()
+//
+//queue.enqueue("Hello")
+//queue.enqueue("From")
+//queue.enqueue("The")
+//queue.enqueue("Other")
+//queue.enqueue("Side")
+//queue.enqueue("Adele")
+//
+//print("Queue is \(queue)")
 
-queue.enqueue("Hello")
-queue.enqueue("From")
-queue.enqueue("The")
-queue.enqueue("Other")
-queue.enqueue("Side")
-queue.enqueue("Adele")
-
+var queue = QueueLinkedList<String>()
+queue.enqueue("Ray")
+queue.enqueue("Brian")
+queue.enqueue("Eric")
 print("Queue is \(queue)")
+queue.dequeue()
+print(queue)
+print("Peek \(queue.peek)")
