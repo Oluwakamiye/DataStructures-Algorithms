@@ -2,22 +2,17 @@
 //  TreeNode.swift
 //  DataStructureAlgorithms
 //
-//  Created by Oluwakamiye Akindele on 10/02/2022.
+//  Created by Oluwakamiye Akindele on 01/03/2022.
 //
 
 import Foundation
 
 class TreeNode<T> {
     var value: T
-    private (set) var children: [TreeNode] = []
+    var children: [TreeNode] = []
     
     init(_ value: T) {
         self.value = value
-    }
-    
-    func addChildNode(_ value: T) {
-        let childTreeNode = TreeNode(value)
-        children.append(childTreeNode)
     }
     
     func add(_ child: TreeNode) {
@@ -25,12 +20,43 @@ class TreeNode<T> {
     }
 }
 
+
+// MARK: Traversal Algorithms
 extension TreeNode {
-    /// Traverses the depth first
-    public func forEachDepthFirstTraversal(visit: (TreeNode) -> Void) {
+    /// Traversese from left to  right.
+    func forEachDepthTraversal(visit: (TreeNode) -> Void) {
         visit(self)
-        children.forEach {
-            $0.forEachDepthFirstTraversal(visit: visit)
+        children.forEach{
+            $0.forEachDepthTraversal(visit: visit)
         }
+    }
+    
+    /// Traverse each level
+    func forEachLevelOrder(visit: (TreeNode) -> Void) {
+        visit(self)
+        var queue = QueueStack<TreeNode>()
+        children.forEach {
+            queue.enqueue($0)
+        }
+        while let node = queue.dequeue() {
+            visit(node)
+            node.children.forEach {
+                queue.enqueue($0)
+            }
+        }
+    }
+}
+
+
+// MARK: Search Algorithms
+extension TreeNode where T: Equatable {
+    func search(_ value: T) -> TreeNode? {
+        var result: TreeNode?
+        forEachLevelOrder { node in
+            if node.value == value  {
+                result = node
+            }
+        }
+        return result
     }
 }
