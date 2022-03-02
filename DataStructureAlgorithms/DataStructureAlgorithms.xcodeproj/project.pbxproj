@@ -20,6 +20,7 @@
 		C5C774A4277203AE000BE054 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C774A3277203AE000BE054 /* main.swift */; };
 		C5C774AD27720A29000BE054 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C774AC27720A29000BE054 /* Stack.swift */; };
 		C5F58D8C27CE07500095654F /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F58D8B27CE07500095654F /* TreeNode.swift */; };
+		C5F58D8F27CF500B0095654F /* BinaryTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F58D8E27CF500B0095654F /* BinaryTreeNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 		C5C774A3277203AE000BE054 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C5C774AC27720A29000BE054 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		C5F58D8B27CE07500095654F /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		C5F58D8E27CF500B0095654F /* BinaryTreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				C5F58D8A27CE01CC0095654F /* Tree */,
+				C5F58D8D27CF4FCC0095654F /* Binary Tree */,
 				C5C774A3277203AE000BE054 /* main.swift */,
 				C5C69A3A27A265E80008759C /* Queue */,
 				C5C774AC27720A29000BE054 /* Stack.swift */,
@@ -128,6 +131,12 @@
 				C5F58D8B27CE07500095654F /* TreeNode.swift */,
 			);
 			path = Tree;
+		C5F58D8D27CF4FCC0095654F /* Binary Tree */ = {
+			isa = PBXGroup;
+			children = (
+				C5F58D8E27CF500B0095654F /* BinaryTreeNode.swift */,
+			);
+			path = "Binary Tree";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +207,7 @@
 				C5C774AD27720A29000BE054 /* Stack.swift in Sources */,
 				C5C69A3E27A266FF0008759C /* QueueArray.swift in Sources */,
 				C5C69A4327A269FD0008759C /* DoublyLinkedListNode.swift in Sources */,
+				C5F58D8F27CF500B0095654F /* BinaryTreeNode.swift in Sources */,
 				C582D54027BA44BC0009B344 /* QueueLinkedList.swift in Sources */,
 				B704FF0D27857B4000CCAF67 /* LinkedList.swift in Sources */,
 				C5C774A4277203AE000BE054 /* main.swift in Sources */,

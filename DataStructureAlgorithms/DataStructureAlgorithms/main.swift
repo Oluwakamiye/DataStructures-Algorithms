@@ -27,7 +27,7 @@ import Foundation
 //print(queue)
 //print("Peek \(queue.peek)")
 
-// Tree Node
+// MARK: Start of TreeNode
 func makeTree() -> TreeNode<String> {
     let tree = TreeNode("Beverages")
     let hot = TreeNode("hot")
@@ -56,6 +56,27 @@ func makeTree() -> TreeNode<String> {
     soda.add(bitterLemon)
     return tree
 }
-
 let tree = makeTree()
 tree.forEachLevelOrder(visit: { print($0.value)})
+// MARK: End of TreeNode
+
+// MARK: Start of Binary Tree
+var tree: BinaryTreeNode<Int> = {
+    let zero = BinaryTreeNode(value: 0)
+    let one = BinaryTreeNode(value: 1)
+    let five = BinaryTreeNode(value: 5)
+    let seven = BinaryTreeNode(value: 7)
+    let eight = BinaryTreeNode(value: 8)
+    let nine = BinaryTreeNode(value: 9)
+    seven.leftChild = one
+    one.leftChild = zero
+    one.rightChild = five
+    seven.rightChild = nine
+    nine.leftChild = eight
+    return seven
+}()
+print(tree)
+tree.inOrderTraversal {
+    print($0)
+}
+// MARK: End of Binary Tree
