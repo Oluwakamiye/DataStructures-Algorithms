@@ -19,6 +19,7 @@
 		C5C69A4327A269FD0008759C /* DoublyLinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C69A4227A269FD0008759C /* DoublyLinkedListNode.swift */; };
 		C5C774A4277203AE000BE054 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C774A3277203AE000BE054 /* main.swift */; };
 		C5C774AD27720A29000BE054 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C774AC27720A29000BE054 /* Stack.swift */; };
+		C5F58D8C27CE07500095654F /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F58D8B27CE07500095654F /* TreeNode.swift */; };
 		C5F58D8F27CF500B0095654F /* BinaryTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F58D8E27CF500B0095654F /* BinaryTreeNode.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		C5C774A0277203AE000BE054 /* DataStructureAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C774A3277203AE000BE054 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C5C774AC27720A29000BE054 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		C5F58D8B27CE07500095654F /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		C5F58D8E27CF500B0095654F /* BinaryTreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 		C5C774A2277203AE000BE054 /* DataStructureAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
+				C5F58D8A27CE01CC0095654F /* Tree */,
 				C5F58D8D27CF4FCC0095654F /* Binary Tree */,
 				C5C774A3277203AE000BE054 /* main.swift */,
 				C5C69A3A27A265E80008759C /* Queue */,
@@ -122,6 +125,12 @@
 			path = DataStructureAlgorithms;
 			sourceTree = "<group>";
 		};
+		C5F58D8A27CE01CC0095654F /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				C5F58D8B27CE07500095654F /* TreeNode.swift */,
+			);
+			path = Tree;
 		C5F58D8D27CF4FCC0095654F /* Binary Tree */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +200,7 @@
 				C5292EC227BE33350043DF12 /* QueueRingBufffer.swift in Sources */,
 				C5C69A3C27A266320008759C /* Queue.swift in Sources */,
 				C5292EC427BE358B0043DF12 /* QueueStack.swift in Sources */,
+				C5F58D8C27CE07500095654F /* TreeNode.swift in Sources */,
 				C5292EC027BE327D0043DF12 /* RingBuffer.swift in Sources */,
 				B704FF0B278579A200CCAF67 /* LinkedListNode.swift in Sources */,
 				C5C69A4027A269DB0008759C /* DoublyLinkedList.swift in Sources */,

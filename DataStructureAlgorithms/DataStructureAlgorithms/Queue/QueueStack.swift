@@ -21,6 +21,7 @@ struct QueueStack<T>: Queue {
     
     public init() {}
     
+    @discardableResult
     mutating func enqueue(_ element: T) -> Bool {
         rightStack.append(element)
         return true
