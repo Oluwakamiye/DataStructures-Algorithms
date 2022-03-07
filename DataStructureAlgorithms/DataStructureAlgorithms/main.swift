@@ -62,22 +62,31 @@ import Foundation
 
 
 // MARK: Start of Binary Tree
-var tree: BinaryTreeNode<Int> = {
-    let zero = BinaryTreeNode(value: 0)
-    let one = BinaryTreeNode(value: 1)
-    let five = BinaryTreeNode(value: 5)
-    let seven = BinaryTreeNode(value: 7)
-    let eight = BinaryTreeNode(value: 8)
-    let nine = BinaryTreeNode(value: 9)
-    seven.leftChild = one
-    one.leftChild = zero
-    one.rightChild = five
-    seven.rightChild = nine
-    nine.leftChild = eight
-    return seven
-}()
-print(tree)
-tree.inOrderTraversal {
-    print($0)
-}
+//var tree: BinaryTreeNode<Int> = {
+//    let zero = BinaryTreeNode(value: 0)
+//    let one = BinaryTreeNode(value: 1)
+//    let five = BinaryTreeNode(value: 5)
+//    let seven = BinaryTreeNode(value: 7)
+//    let eight = BinaryTreeNode(value: 8)
+//    let nine = BinaryTreeNode(value: 9)
+//    seven.leftChild = one
+//    one.leftChild = zero
+//    one.rightChild = five
+//    seven.rightChild = nine
+//    nine.leftChild = eight
+//    return seven
+//}()
+//print(tree)
+//tree.inOrderTraversal {
+//    print($0)
+//}
 // MARK: End of Binary Tree
+
+
+// MARK: Start of Binary Search Tree
+var bst =  BinarySearchTree<Int>()
+for i in 0..<5 {
+    bst.insert(i)
+}
+print(bst)
+// MARK: End of Binary Search Tree
