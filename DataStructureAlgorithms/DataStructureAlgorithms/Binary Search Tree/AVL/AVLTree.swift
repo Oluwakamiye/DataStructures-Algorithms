@@ -65,7 +65,7 @@ extension AVLTree {
     
     // Is used to make an initial right rotate on the right childnode, then a left rotate on the node
     private func rightLeftRotate(_ node: AVLNode<T>) -> AVLNode<T> {
-        guard let rightChild = rightChild else {
+        guard let rightChild = node.rightChild else {
             return node
         }
         node.rightChild = rightRotate(rightChild)
@@ -74,7 +74,7 @@ extension AVLTree {
     
     // Is used to make an initial left rotate on the left childnode, then a right rotate on the node
     private func leftRightRotate(_ node: AVLNode<T>) -> AVLNode<T> {
-        guard let leftChild = leftChild else {
+        guard let leftChild = node.leftChild else {
             return node
         }
         node.leftChild = leftRotate(leftChild)
