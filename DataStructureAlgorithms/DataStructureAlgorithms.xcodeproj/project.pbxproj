@@ -12,6 +12,8 @@
 		C5292EC027BE327D0043DF12 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5292EBF27BE327D0043DF12 /* RingBuffer.swift */; };
 		C5292EC227BE33350043DF12 /* QueueRingBufffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5292EC127BE33350043DF12 /* QueueRingBufffer.swift */; };
 		C5292EC427BE358B0043DF12 /* QueueStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5292EC327BE358B0043DF12 /* QueueStack.swift */; };
+		C56CA4B527DF254C0059341B /* AVLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56CA4B427DF254C0059341B /* AVLNode.swift */; };
+		C56CA4B727DF31DB0059341B /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56CA4B627DF31DB0059341B /* AVLTree.swift */; };
 		C5759A6127D0BAE000DCF1B0 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5759A6027D0BAE000DCF1B0 /* BinarySearchTree.swift */; };
 		C582D54027BA44BC0009B344 /* QueueLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582D53F27BA44BC0009B344 /* QueueLinkedList.swift */; };
 		C5A7688327D0B7E200994346 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A7688027D0B7E100994346 /* TreeNode.swift */; };
@@ -42,6 +44,8 @@
 		C5292EBF27BE327D0043DF12 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
 		C5292EC127BE33350043DF12 /* QueueRingBufffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueRingBufffer.swift; sourceTree = "<group>"; };
 		C5292EC327BE358B0043DF12 /* QueueStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueStack.swift; sourceTree = "<group>"; };
+		C56CA4B427DF254C0059341B /* AVLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLNode.swift; sourceTree = "<group>"; };
+		C56CA4B627DF31DB0059341B /* AVLTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
 		C5759A6027D0BAE000DCF1B0 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		C582D53F27BA44BC0009B344 /* QueueLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueLinkedList.swift; sourceTree = "<group>"; };
 		C5A7688027D0B7E100994346 /* TreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
@@ -75,9 +79,27 @@
 			path = "Linked List";
 			sourceTree = "<group>";
 		};
+		C56CA4B227DF24630059341B /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				C5C774AC27720A29000BE054 /* Stack.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		C56CA4B327DF252B0059341B /* AVL */ = {
+			isa = PBXGroup;
+			children = (
+				C56CA4B427DF254C0059341B /* AVLNode.swift */,
+				C56CA4B627DF31DB0059341B /* AVLTree.swift */,
+			);
+			path = AVL;
+			sourceTree = "<group>";
+		};
 		C5759A5F27D0BACB00DCF1B0 /* Binary Search Tree */ = {
 			isa = PBXGroup;
 			children = (
+				C56CA4B327DF252B0059341B /* AVL */,
 				C5759A6027D0BAE000DCF1B0 /* BinarySearchTree.swift */,
 			);
 			path = "Binary Search Tree";
@@ -139,12 +161,12 @@
 		C5C774A2277203AE000BE054 /* DataStructureAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
+				C5C774A3277203AE000BE054 /* main.swift */,
 				C5759A5F27D0BACB00DCF1B0 /* Binary Search Tree */,
 				C5A7688127D0B7E100994346 /* Binary Tree */,
 				C5A7687F27D0B7E100994346 /* Tree */,
-				C5C774A3277203AE000BE054 /* main.swift */,
 				C5C69A3A27A265E80008759C /* Queue */,
-				C5C774AC27720A29000BE054 /* Stack.swift */,
+				C56CA4B227DF24630059341B /* Stack */,
 				B7338CB4278C07790014386F /* Linked List */,
 				C5C69A4127A269E20008759C /* Doubly Linked List */,
 				C5292EBF27BE327D0043DF12 /* RingBuffer.swift */,
@@ -211,12 +233,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5292EC227BE33350043DF12 /* QueueRingBufffer.swift in Sources */,
+				C56CA4B527DF254C0059341B /* AVLNode.swift in Sources */,
 				C5C69A3C27A266320008759C /* Queue.swift in Sources */,
 				C5292EC427BE358B0043DF12 /* QueueStack.swift in Sources */,
 				C5A7688327D0B7E200994346 /* TreeNode.swift in Sources */,
 				C5A7688427D0B7E200994346 /* BinaryTreeNode.swift in Sources */,
 				C5292EC027BE327D0043DF12 /* RingBuffer.swift in Sources */,
 				B704FF0B278579A200CCAF67 /* LinkedListNode.swift in Sources */,
+				C56CA4B727DF31DB0059341B /* AVLTree.swift in Sources */,
 				C5C69A4027A269DB0008759C /* DoublyLinkedList.swift in Sources */,
 				C5C774AD27720A29000BE054 /* Stack.swift in Sources */,
 				C5C69A3E27A266FF0008759C /* QueueArray.swift in Sources */,
