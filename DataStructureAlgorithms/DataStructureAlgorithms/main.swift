@@ -84,9 +84,32 @@ import Foundation
 
 
 // MARK: Start of Binary Search Tree
-var bst =  BinarySearchTree<Int>()
-for i in 0..<5 {
-    bst.insert(i)
-}
-print(bst)
+//var bst =  BinarySearchTree<Int>()
+//for i in 0..<5 {
+//    bst.insert(i)
+//}
+//print(bst)
 // MARK: End of Binary Search Tree
+
+
+// MARK: Start of Trie Nodes
+var trie = Trie<String>()
+trie.insert("TEACHINGS")
+trie.insert("TEACUPS")
+trie.insert("TERRAIN")
+
+var result = ""
+trie.root.levelTraverse(visit: {
+    if $0.key != nil {
+        result += "\($0.key!)"
+    }
+})
+print(result)
+//print(trie.root.key)
+//
+if trie.contains("TERRA") {
+    print("Trie contains TERRA")
+} else {
+    print("Trie does not contain TERRA")
+}
+// MARK: End of Trie Nodes

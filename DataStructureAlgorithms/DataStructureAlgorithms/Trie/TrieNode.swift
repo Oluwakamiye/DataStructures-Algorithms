@@ -17,4 +17,20 @@ public class TrieNode<Key: Hashable> {
         self.key = key
         self.parent = parent
     }
+    
+    public func levelTraverse(visit: (TrieNode) -> Void) {
+        visit(self)
+        var trieQueue = QueueStack<TrieNode>()
+        children.forEach {
+            trieQueue.enqueue($0.value)
+        }
+//        var level = 0
+//        print("End of Level \(level)")
+        while let node = trieQueue.dequeue() {
+            visit(node)
+            node.children.forEach {
+                trieQueue.enqueue($0.value)
+            }
+        }
+    }
 }
