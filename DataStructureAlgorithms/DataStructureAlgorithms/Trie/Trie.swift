@@ -32,8 +32,7 @@ class Trie<CollectionType: Collection> where CollectionType.Element: Hashable {
             }
             current = child
         }
-//        return current.isTerminating
-        return true
+        return current.isTerminating
     }
     
     public func remove(_ collection: CollectionType) {
