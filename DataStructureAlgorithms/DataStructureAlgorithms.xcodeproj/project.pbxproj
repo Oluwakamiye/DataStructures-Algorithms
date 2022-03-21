@@ -24,6 +24,7 @@
 		C5C69A4327A269FD0008759C /* DoublyLinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C69A4227A269FD0008759C /* DoublyLinkedListNode.swift */; };
 		C5C774A4277203AE000BE054 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C774A3277203AE000BE054 /* main.swift */; };
 		C5C774AD27720A29000BE054 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C774AC27720A29000BE054 /* Stack.swift */; };
+		C5DBDE8727E862B30056691E /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DBDE8627E862B30056691E /* BinarySearch.swift */; };
 		C5F65FFA27E07311005EFBC9 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F65FF927E07311005EFBC9 /* TrieNode.swift */; };
 		C5F65FFC27E074C2005EFBC9 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F65FFB27E074C2005EFBC9 /* Trie.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		C5C774A0277203AE000BE054 /* DataStructureAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C774A3277203AE000BE054 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C5C774AC27720A29000BE054 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		C5DBDE8627E862B30056691E /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		C5F65FF927E07311005EFBC9 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
 		C5F65FFB27E074C2005EFBC9 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				C5C774A3277203AE000BE054 /* main.swift */,
+				C5DBDE8527E862920056691E /* Binary Search */,
 				C5F65FF827E072E7005EFBC9 /* Trie */,
 				C5759A5F27D0BACB00DCF1B0 /* Binary Search Tree */,
 				C5A7688127D0B7E100994346 /* Binary Tree */,
@@ -177,6 +180,14 @@
 				C5292EBF27BE327D0043DF12 /* RingBuffer.swift */,
 			);
 			path = DataStructureAlgorithms;
+			sourceTree = "<group>";
+		};
+		C5DBDE8527E862920056691E /* Binary Search */ = {
+			isa = PBXGroup;
+			children = (
+				C5DBDE8627E862B30056691E /* BinarySearch.swift */,
+			);
+			path = "Binary Search";
 			sourceTree = "<group>";
 		};
 		C5F65FF827E072E7005EFBC9 /* Trie */ = {
@@ -250,6 +261,7 @@
 				C5F65FFA27E07311005EFBC9 /* TrieNode.swift in Sources */,
 				C56CA4B527DF254C0059341B /* AVLNode.swift in Sources */,
 				C5C69A3C27A266320008759C /* Queue.swift in Sources */,
+				C5DBDE8727E862B30056691E /* BinarySearch.swift in Sources */,
 				C5292EC427BE358B0043DF12 /* QueueStack.swift in Sources */,
 				C5A7688327D0B7E200994346 /* TreeNode.swift in Sources */,
 				C5A7688427D0B7E200994346 /* BinaryTreeNode.swift in Sources */,
