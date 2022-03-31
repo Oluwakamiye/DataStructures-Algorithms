@@ -11,8 +11,15 @@ struct Heap<T: Equatable> {
     var elements: [T] = []
     let sort: (T,T) -> Bool
     
-    init(sort: @escaping (T,T) -> Bool) {
+    init(sort: @escaping (T,T) -> Bool, elements: [T] = []) {
         self.sort = sort
+        self.elements = elements
+        
+        if !elements.isEmpty {
+            for i in stride(from: elements.count / 2 - 1, through: 0, by: -1) {
+                siftDown(from: i)
+            }
+        }
     }
     
     var isEmpty: Bool {
@@ -39,6 +46,7 @@ struct Heap<T: Equatable> {
         (index - 1) / 2
     }
     
+    /// Remove the root node of the heap tree
     mutating func remove() -> T? {
         guard !isEmpty else {
             return nil
@@ -88,5 +96,38 @@ struct Heap<T: Equatable> {
             child = parent
             parent = parentIndex(ofChildAt: child)
         }
+    }
+    
+    mutating func remove(at index: Int) -> T? {
+        guard index < elements.count else {
+            return nil
+        }
+        if index == elements.count - 1  {
+            return elements.removeLast()
+        } else {
+            elements.swapAt(index, elements.count - 1)
+            defer {
+                siftDown(from: index)
+                siftUp(from: index)
+            }
+            return elements.removeLast()
+        }
+    }
+    
+    func index(of element: T, startingAt i: Int) -> Int? {
+        guard i < count,
+        !sort(element, elements[i]) else {
+            return nil
+        }
+        if element == elements[i] {
+            return i
+        }
+        if let j = index(of: element, startingAt: leftChildIndex(ofParentAt: i)) {
+            return j
+        }
+        if let j = index(of: element, startingAt: rightChildIndex(ofParentAt: i)) {
+            return j
+        }
+        return nil
     }
 }
