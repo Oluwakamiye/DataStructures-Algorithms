@@ -385,9 +385,31 @@ import Foundation
 
 
 // MARK: Start of Heap
-var heap = Heap(sort: >, elements: [1,12,3,4,1,6,8,7])
-print("Index at \(heap.index(of: 6, startingAt: 0)!)")
-while !heap.isEmpty {
-    print(heap.remove()!)
-}
+//var heap = Heap(sort: >, elements: [1,12,3,4,1,6,8,7])
+//print("Index at \(heap.index(of: 6, startingAt: 0)!)")
+//while !heap.isEmpty {
+//    print(heap.remove()!)
+//}
 // MARK: End of Heap
+
+
+// MARK: Start of SelectionSort
+//var array = [4,9,10,3]
+//insertionSort(&array)
+//print(array)
+// MARK: End of SelectionSort
+
+// SWAP
+// I saw this somewhere and it actually works
+//var a = 20
+//var b = 30
+//(a, b) = (b, a)
+//print(b)
+
+var arr = [4,9,3,10,2,1,5, 64,-1, -9]
+eInsertionSort(&arr)
+
+let innerArray = (4..<arr.count)
+//print(innerArray.min())
+
+print(arr)
