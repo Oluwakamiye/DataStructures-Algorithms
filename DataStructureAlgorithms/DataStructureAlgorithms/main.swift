@@ -406,10 +406,13 @@ import Foundation
 //(a, b) = (b, a)
 //print(b)
 
-var arr = [4,9,3,10,2,1,5, 64,-1, -9]
-eInsertionSort(&arr)
-
-let innerArray = (4..<arr.count)
-//print(innerArray.min())
-
-print(arr)
+var arr = [4,9,3,10,2,1,5,64,-1,-9]
+// Bubble Sort
+//bubbleSort(&arr)
+// Selection Sort
+//selectionSort(&arr)
+// Insertion Sort
+//eInsertionSort(&arr)
+//print(arr)
+// Merge Sort
+print("Merge sort Result \n\(mergeSort(arr))")

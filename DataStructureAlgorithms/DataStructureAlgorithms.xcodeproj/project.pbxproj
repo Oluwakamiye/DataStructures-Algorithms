@@ -13,6 +13,7 @@
 		C5292EC027BE327D0043DF12 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5292EBF27BE327D0043DF12 /* RingBuffer.swift */; };
 		C5292EC227BE33350043DF12 /* QueueRingBufffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5292EC127BE33350043DF12 /* QueueRingBufffer.swift */; };
 		C5292EC427BE358B0043DF12 /* QueueStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5292EC327BE358B0043DF12 /* QueueStack.swift */; };
+		C55B5F5328112D6A00057F3E /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B5F5228112D6A00057F3E /* MergeSort.swift */; };
 		C560C5C027E9B58700419CA8 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C560C5BF27E9B58700419CA8 /* Heap.swift */; };
 		C56CA4B527DF254C0059341B /* AVLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56CA4B427DF254C0059341B /* AVLNode.swift */; };
 		C56CA4B727DF31DB0059341B /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56CA4B627DF31DB0059341B /* AVLTree.swift */; };
@@ -51,6 +52,7 @@
 		C5292EBF27BE327D0043DF12 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
 		C5292EC127BE33350043DF12 /* QueueRingBufffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueRingBufffer.swift; sourceTree = "<group>"; };
 		C5292EC327BE358B0043DF12 /* QueueStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueStack.swift; sourceTree = "<group>"; };
+		C55B5F5228112D6A00057F3E /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		C560C5BF27E9B58700419CA8 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		C56CA4B427DF254C0059341B /* AVLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLNode.swift; sourceTree = "<group>"; };
 		C56CA4B627DF31DB0059341B /* AVLTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			children = (
 				C5B75B0027FC238F000FB3D5 /* On2SortingAlgorithms.swift */,
 				C51157AA2806DC2200546ED6 /* Exercise.swift */,
+				C55B5F5228112D6A00057F3E /* MergeSort.swift */,
 			);
 			path = "Sorting Algorithms";
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				C51157AB2806DC2200546ED6 /* Exercise.swift in Sources */,
 				C5C774AD27720A29000BE054 /* Stack.swift in Sources */,
 				C5C69A3E27A266FF0008759C /* QueueArray.swift in Sources */,
+				C55B5F5328112D6A00057F3E /* MergeSort.swift in Sources */,
 				C5C69A4327A269FD0008759C /* DoublyLinkedListNode.swift in Sources */,
 				C582D54027BA44BC0009B344 /* QueueLinkedList.swift in Sources */,
 				B704FF0D27857B4000CCAF67 /* LinkedList.swift in Sources */,
