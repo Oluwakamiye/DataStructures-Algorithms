@@ -406,7 +406,10 @@ import Foundation
 //(a, b) = (b, a)
 //print(b)
 
-var arr = [4,9,3,10,2,1,5,64,-1,-9]
+var arr = [23,1000,4,9,3,10,2, 78989, 3100013,1,5,64,-1,-9, -23, -99]
+
+//var arr = [88,410,1772,20]
+
 // Bubble Sort
 //bubbleSort(&arr)
 // Selection Sort
@@ -415,4 +418,10 @@ var arr = [4,9,3,10,2,1,5,64,-1,-9]
 //eInsertionSort(&arr)
 //print(arr)
 // Merge Sort
-print("Merge sort Result \n\(mergeSort(arr))")
+//print("Merge sort Result \n\(mergeSort(arr))")
+// End of Merge Sort
+
+// Start of Radix Sort
+radixSort(array: &arr)
+print("Arr is \(arr)")
+// End of Radix Sort
